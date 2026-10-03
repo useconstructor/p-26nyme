@@ -164,9 +164,9 @@ export default function Home() {
   ]
 
   return (
-    <main className="min-h-screen bg-[#FBF7F0]">
+    <main className="min-h-screen bg-white">
       {/* Sticky Navigation */}
-      <nav className="fixed top-0 left-0 right-0 z-50 bg-[#FBF7F0]/95 backdrop-blur-sm border-b border-[#E5E0D5]">
+      <nav className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm border-b border-[#DBEAFE]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16">
             <a href="#" className="flex items-center gap-2">
@@ -203,7 +203,7 @@ export default function Home() {
 
         {/* Mobile Nav Panel */}
         <div
-          className={`md:hidden absolute top-16 left-0 right-0 bg-[#FBF7F0] border-b border-[#E5E0D5] transition-all duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] ${
+          className={`md:hidden absolute top-16 left-0 right-0 bg-white border-b border-[#DBEAFE] transition-all duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] ${
             mobileMenuOpen ? 'opacity-100 translate-y-0 pointer-events-auto' : 'opacity-0 -translate-y-4 pointer-events-none'
           }`}
         >
@@ -369,7 +369,7 @@ export default function Home() {
       </section>
 
       {/* Locations Section */}
-      <section id="ubicaciones" className="py-20 lg:py-28 bg-[#FEFCF8]">
+      <section id="ubicaciones" className="py-20 lg:py-28 bg-[#F0F9FF]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <Badge className="bg-[#D97706]/10 text-[#D97706] hover:bg-[#D97706]/20 border-none mb-4">
@@ -609,7 +609,7 @@ export default function Home() {
       </section>
 
       {/* Gallery Masonry */}
-      <section className="py-20 lg:py-28 bg-[#FEFCF8]">
+      <section className="py-20 lg:py-28 bg-[#F0F9FF]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <Badge className="bg-[#047857]/10 text-[#047857] hover:bg-[#047857]/20 border-none mb-4">
@@ -717,7 +717,7 @@ export default function Home() {
                           value={reservationForm.name}
                           onChange={(e) => setReservationForm({ ...reservationForm, name: e.target.value })}
                           placeholder="Tu nombre"
-                          className="bg-[#FBF7F0] border-[#E5E0D5]"
+                          className="bg-[#EFF6FF] border-[#DBEAFE]"
                         />
                       </div>
                       <div>
@@ -728,7 +728,7 @@ export default function Home() {
                           value={reservationForm.email}
                           onChange={(e) => setReservationForm({ ...reservationForm, email: e.target.value })}
                           placeholder="tu@email.com"
-                          className="bg-[#FBF7F0] border-[#E5E0D5]"
+                          className="bg-[#EFF6FF] border-[#DBEAFE]"
                         />
                       </div>
                     </div>
@@ -741,7 +741,7 @@ export default function Home() {
                           value={reservationForm.phone}
                           onChange={(e) => setReservationForm({ ...reservationForm, phone: e.target.value })}
                           placeholder="55 1234 5678"
-                          className="bg-[#FBF7F0] border-[#E5E0D5]"
+                          className="bg-[#EFF6FF] border-[#DBEAFE]"
                         />
                       </div>
                       <div>
@@ -750,7 +750,7 @@ export default function Home() {
                           required
                           value={reservationForm.location}
                           onChange={(e) => setReservationForm({ ...reservationForm, location: e.target.value })}
-                          className="w-full h-10 px-3 rounded-md bg-[#FBF7F0] border border-[#E5E0D5] text-[#1F2937]"
+                          className="w-full h-10 px-3 rounded-md bg-[#EFF6FF] border border-[#DBEAFE] text-[#1F2937]"
                         >
                           {locations.map((loc) => (
                             <option key={loc.name} value={loc.name}>
@@ -770,7 +770,7 @@ export default function Home() {
                           value={reservationForm.date}
                           onChange={(e) => setReservationForm({ ...reservationForm, date: e.target.value })}
                           min={new Date().toISOString().split('T')[0]}
-                          className="bg-[#FBF7F0] border-[#E5E0D5]"
+                          className="bg-[#EFF6FF] border-[#DBEAFE]"
                         />
                       </div>
                       <div>
@@ -779,7 +779,7 @@ export default function Home() {
                           required
                           value={reservationForm.time}
                           onChange={(e) => setReservationForm({ ...reservationForm, time: e.target.value })}
-                          className="w-full h-10 px-3 rounded-md bg-[#FBF7F0] border border-[#E5E0D5] text-[#1F2937]"
+                          className="w-full h-10 px-3 rounded-md bg-[#EFF6FF] border border-[#DBEAFE] text-[#1F2937]"
                         >
                           {['10:00', '11:00', '12:00', '13:00', '14:00', '15:00', '16:00', '17:00', '18:00', '19:00', '20:00', '21:00', '22:00'].map((time) => (
                             <option key={time} value={time}>
@@ -794,7 +794,7 @@ export default function Home() {
                           required
                           value={reservationForm.party_size}
                           onChange={(e) => setReservationForm({ ...reservationForm, party_size: parseInt(e.target.value) })}
-                          className="w-full h-10 px-3 rounded-md bg-[#FBF7F0] border border-[#E5E0D5] text-[#1F2937]"
+                          className="w-full h-10 px-3 rounded-md bg-[#EFF6FF] border border-[#DBEAFE] text-[#1F2937]"
                         >
                           {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map((num) => (
                             <option key={num} value={num}>
