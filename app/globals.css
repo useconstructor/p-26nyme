@@ -1,24 +1,33 @@
 @import "tailwindcss";
 
 @theme {
-  --font-sans: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif;
-  --font-mono: var(--font-geist-mono), ui-monospace, monospace;
-  --color-background: oklch(1 0 0);
-  --color-foreground: oklch(0.145 0 0);
-  --color-card: oklch(1 0 0);
-  --color-card-foreground: oklch(0.145 0 0);
-  --color-primary: oklch(0.205 0 0);
-  --color-primary-foreground: oklch(0.985 0 0);
-  --color-secondary: oklch(0.97 0 0);
-  --color-secondary-foreground: oklch(0.205 0 0);
-  --color-muted: oklch(0.97 0 0);
-  --color-muted-foreground: oklch(0.556 0 0);
-  --color-accent: oklch(0.97 0 0);
-  --color-accent-foreground: oklch(0.205 0 0);
+  --font-sans: 'DM Sans', 'Inter', ui-sans-serif, system-ui, sans-serif;
+  --font-mono: ui-monospace, monospace;
+
+  --color-cream: #FBF7F0;
+  --color-cream-light: #FEFCF8;
+  --color-orange: #D97706;
+  --color-orange-dark: #B45309;
+  --color-charcoal: #1F2937;
+  --color-gray: #6B7280;
+  --color-cilantro: #047857;
+
+  --color-background: #FBF7F0;
+  --color-foreground: #1F2937;
+  --color-card: #FEFCF8;
+  --color-card-foreground: #1F2937;
+  --color-primary: #D97706;
+  --color-primary-foreground: #FEFCF8;
+  --color-secondary: #FBF7F0;
+  --color-secondary-foreground: #1F2937;
+  --color-muted: #F3F0E7;
+  --color-muted-foreground: #6B7280;
+  --color-accent: #047857;
+  --color-accent-foreground: #FEFCF8;
   --color-destructive: oklch(0.577 0.245 27.325);
-  --color-border: oklch(0.922 0 0);
-  --color-input: oklch(0.922 0 0);
-  --color-ring: oklch(0.708 0 0);
+  --color-border: #E5E0D5;
+  --color-input: #E5E0D5;
+  --color-ring: #D97706;
   --radius: 0.5rem;
 }
 
@@ -30,4 +39,8 @@
     background-color: var(--color-background);
     color: var(--color-foreground);
   }
+}
+
+html {
+  scroll-behavior: smooth;
 }
